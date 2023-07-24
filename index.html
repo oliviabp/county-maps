@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-<div id="ajaxContent"></div>
+<head>
+  <title>Plot Viewer</title>
+</head>
+<body>
+  <div id="ajaxContent"></div>
   <script>
-  var Webflow = Webflow || [];
-  Webflow.push(function() {
-    $.get('https://raw.githubusercontent.com/oliviabp/housing-count-plots/main/national/county-maps/counties_map_ELI_0.html', function(data) {
-      $('#ajaxContent').append(data);
+    var Webflow = Webflow || [];
+    Webflow.push(function() {
+      $.get('https://raw.githubusercontent.com/oliviabp/housing-count-plots/main/national/county-maps/counties_map_ELI_0.html', function(data) {
+        $('#ajaxContent').append(data);
+      });
     });
-  });
   </script>
+</body>
 </html>
